@@ -5,15 +5,15 @@ Kelas adalah cetakan biru tempat objek individual dibuat.
 
 class Mobil {
 
-    char nama = "Lamborghini";
-    char warna = "Merah";
+    String nama = "Lamborghini";
+    String warna = "Merah";
     int kecepatan = 325;
 
-    void ubahNama(char namaBaru) {
+    void ubahNama(String namaBaru) {
         nama = namaBaru;
     }
 
-    void ubahWarna(char warnaBaru) {
+    void ubahWarna(String warnaBaru) {
         warna = warnaBaru;
     }
 
