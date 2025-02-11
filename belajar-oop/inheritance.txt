@@ -1,0 +1,40 @@
+Inheritance atau Warisan
+
+Bergagai jenis objek seringkali memiliki sejumlah kesamaan satu sama lain.
+Mobil sehari-hari, mobil balap, mobil angkut barang semuanya memmiliki karakteristik mobil (jumlah gigi, kecepatan/ jam, jumlah jok).
+Namun masing-masing juga memiliki fitur tambahan yang membuatnya berbeda. Mobil sehari-hari memiliki jumlah jok lebih banyak,
+mobil balap memiliki kecepatan /jam lebih cepat, dan mobil angkut barang memiliki bak untuk mengangkut barang.
+
+Pemrograman berorientasi objek memungkinkan kelas mewarisi status dan perilaku yang umum digunakan dari kelas lain.
+
+Dalam contoh berikut ini Mobil menjadi super kelas dari MobilSeharihari, MobilBalap dan MobilAngkutBarang.
+Dalam pemrograman Java setiap kelas di perbolehkan memiliki satu super kelas dan setiap super kelas berpotensi memiliki
+subkelas dengan jumlah tak terbatas.
+
+// super kelas
+class Mobil {
+
+}
+
+// kelas warisan
+class MobilSehariHari extends Mobil {
+
+}
+
+// kelas warisan
+class MobilBalap extends Mobil {
+
+}
+
+// kelas warisan
+class MobilAngkutBarang extends Mobil {
+
+}
+
+Penjelasan
+Kelas warisan (MobilSehariHari, MobilBalap, MobilAngkutBarang) akan memiliki atribut dan metode yang sama dengan super kelas yaitu (Mobil),
+tetapi memungkinkan kodenya untuk fokus secara eksklusif pada fitur-fitur yang membuatnya unik.
+Ini akan membuat kode untuk sub kelas mudah dibaca.
+
+Penting!!
+Dokumentasikan kode dengan baik karena atribut dan metode yang ada pada superkelas tidak terlihat langsung di sub-sub kelas
