@@ -38,3 +38,48 @@ Ini akan membuat kode untuk sub kelas mudah dibaca.
 
 Penting!!
 Dokumentasikan kode dengan baik karena atribut dan metode yang ada pada superkelas tidak terlihat langsung di sub-sub kelas
+
+
+Contoh kode Inheritance (Pewarisan)
+
+public class Main {
+
+    public static void main(String[] args) {
+        // membuat object Mobil
+        Mobil mobil = new Mobil();
+        mobil.name = "Avanza";
+        mobil.displayName();
+
+        // membuat object mobil balap
+        MobilBalap mobil_balap = new MobilBalap();
+        mobil_balap.name = "Ferrari";
+        mobil_balap.displayName();
+
+        // membuat object mobil angkut barang
+        MobilAngkutBarang mobil_angkut_barang = new MobilAngkutBarang();
+        mobil_angkut_barang.name = "Carry";
+        mobil_angkut_barang.displayName();
+    }
+    
+}
+
+
+class Mobil {
+    String name;
+
+    void displayName() {
+        System.out.println("Name : " + this.name);
+    }
+}
+
+
+// class MobilBalap memiliki warisan dari class Mobil 
+class MobilBalap extends Mobil {
+
+}
+
+
+// class MobilBalap memiliki warisan dari class Mobil
+class MobilAngkutBarang extends Mobil {
+
+}
