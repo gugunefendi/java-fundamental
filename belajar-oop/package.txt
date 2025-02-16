@@ -1,0 +1,28 @@
+Package atau Paket
+
+Package adalah namespace yang mengatur sekumpulan class dan interface terkait.
+Salah satu manfaat dari package adalah untuk menghindari bentrok nama class, jika ada yang benama sama serta memudahkan
+pengelolaan kode program, terutama untuk aplikasi besar.
+
+Dalam prakteknya nanti ini seperti membuat folder ketika menyimpan file. Didalam setiap foler ada nama file yang sama
+namun karena di simpan di folder yang berbeda itu tidak masalah.
+
+Begitu juga didalam Package Java, kita bisa membuat nama class yang sama asalkan didalam package yang berbeda.
+
+Package didalam Java dibagi menjadi 2:
+1. Built in Package (package bawaan bahasa Java)
+2. User-defined Package (package yang kita definisikan sendiri)
+
+Built in Package (Package Bawaan Java)
+Java memiliki banyak package bawaan, daftar pckage dari java bisa dilihat di 
+https://docs.oracle.com/javase/8/docs/api/overview-summary.html
+
+Untuk menggunakan package, tambah perintah import sebelum nama package diawal kode program
+seperti import java.util.Scanner;
+
+Kode diatas akan mengimport class Scanne yang ada di package java.util.
+
+
+Sumber:
+Dokumentasi resmi https://docs.oracle.com/javase/tutorial/java/concepts/package.html
+Dunia ilkom https://www.duniailkom.com/tutorial-oop-java-cara-membuat-package-dan-proses-import/
