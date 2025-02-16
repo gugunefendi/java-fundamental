@@ -23,6 +23,11 @@ seperti import java.util.Scanner;
 Kode diatas akan mengimport class Scanne yang ada di package java.util.
 
 
+User-defined Package
+
+User defined package adalah package yang kita buat sendiri
+Contoh membuat package di dalam Java ada didalam folder contoh_package
+
 Sumber:
 Dokumentasi resmi https://docs.oracle.com/javase/tutorial/java/concepts/package.html
 Dunia ilkom https://www.duniailkom.com/tutorial-oop-java-cara-membuat-package-dan-proses-import/
