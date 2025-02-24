@@ -10,6 +10,9 @@ public class Main {
         System.out.println(mobil1.merek);
         System.out.println(mobil1.warna);
 
+        System.out.println(mobil2.merek);
+        System.out.println(mobil2.warna);
+
     }
     
 }
