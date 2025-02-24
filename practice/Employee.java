@@ -5,14 +5,10 @@ public class Employee implements EmployeeInterface {
     // states
     String name;
     String position;
-    double salary;
-    String skill;
-    String foreignLanguage;
 
-    Employee(String name, String position, double salary) {
+    Employee(String name, String position) {
         this.name = name;
         this.position = position;
-        this.salary = salary;
     }
 
     // no return and have a parameter
@@ -26,11 +22,6 @@ public class Employee implements EmployeeInterface {
     }
 
     // no return and and have a parameter
-    void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    // no return and and have a parameter
     String getName() {
         return this.name;
     }
@@ -40,25 +31,8 @@ public class Employee implements EmployeeInterface {
         return this.position;
     }
 
-    // no return and and have a parameter
-    double getSalary() {
-        return this.salary;
-    }
-
-    public void setSkill(String skill) {
-        this.skill = skill;
-    }
-
-    public String getSkill() {
-        return this.skill;
-    }
-
-    public void setForeignLanguage(String language) {
-        this.foreignLanguage = language;
-    }
-
-    public String getForeignLanguage() {
-        return this.foreignLanguage;
+    public double bonus() {
+        return 10.000;
     }
     
 }
