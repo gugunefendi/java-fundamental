@@ -1,11 +1,19 @@
 package practice;
 
-public class Employee {
+public class Employee implements EmployeeInterface {
 
     // states
     String name;
     String position;
     double salary;
+    String skill;
+    String foreignLanguage;
+
+    Employee(String name, String position, double salary) {
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
+    }
 
     // no return and have a parameter
     void setName(String name) {
@@ -35,6 +43,22 @@ public class Employee {
     // no return and and have a parameter
     double getSalary() {
         return this.salary;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
+    }
+
+    public String getSkill() {
+        return this.skill;
+    }
+
+    public void setForeignLanguage(String language) {
+        this.foreignLanguage = language;
+    }
+
+    public String getForeignLanguage() {
+        return this.foreignLanguage;
     }
     
 }
