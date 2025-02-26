@@ -1,0 +1,31 @@
+Constructor
+
+Constructor adalah sebuah method khusus dalam sebuah class yang digunakan untuk menginisialisasi object.
+Constructor akan otomatis di panggil saat object dibuat.
+
+Ciri-ciri constructor:
+1. Nama constructor harus sama dengan nama class
+2. Tidak memiliki return type (void pun tidak boleh ditulis)
+3. Bisa memiliki parameter untuk menerima nilai saat object dibuat
+
+contoh:
+class Mobil {
+    String merek;
+    String warna;
+
+    // constructor
+    Mobil(String merek, String warna) {
+        this.merek = merek;
+        this.warna = warna;
+    }
+}
+
+Dengan menggunakan constructor kita tidak perlu mengatur nilai attribut satu persatu.
+
+Contoh tidak menggunakan constructor
+Mobil mobil1 = new Mobil();
+mobil1.merek = "Toyota";  // Harus diisi manual
+mobil1.warna = "Hitam";
+
+Dengan constructor
+Mobil mobil1 = new Mobil("Toyota", "Hitam"); // tanpa mengisi attribut satu per satu

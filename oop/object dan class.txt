@@ -1,0 +1,77 @@
+Object
+
+Object didalam pemrograman sama saja seperti object didalam dunia nyata. Ia memiliki status dan perikalu.
+Contohnya Mobil memiliki status:
+- merek
+- warna
+- tahun pembuatan
+- kecepatan/jam dll
+dan perilaku:
+- mesin menyala
+- mesin mati
+- berjalan
+- isi bensin
+- parkir dll
+
+Dalam pemrograman Java state / status adalah kumpulan data dari object yang dapat berubah.
+Lalu perilaku disebut sebagai behavior atau method yang di miliki object.
+
+
+Class
+
+Class adalah blue print atau cetakan biru untuk membuat object, dengan adanya class dapat memudahkan
+kita dalam membuat object yang sama tanpa mengulang-ulang kode.
+
+Dalam dunia nyata Class di ibaratkan seperti cetakan kue dan kue adalah objectnya.
+Untuk membuat kue kita bisa memakai cetakan yang sama namun warna, rasa bisa saja berubah.
+Cetakan kue adalah classnya lalu warna, rasa adalah statenya atau statusnya.
+
+Contoh:
+class Kue {
+    // state / status atau propertis atau attribut
+    String warna = "Coklat;
+    String rasa = "Coklat";
+
+    // behavior / perilaku atau method
+    String ubahWarna(String warna) {
+        this.warna = warna;
+    }
+
+    String ubahRasa(String rasa) {
+        this.rasa = rasa;
+    }
+
+    void displayKue() {
+        System.out.print("Kue warna : " + this.warna + "Kue rasa: " + this.rasa);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Kue kueCoklat = new Kue();
+        kueCoklat.ubahWarna("Green");
+        kueCoklat.ubahRasa("Green Tea");
+        kueCoklat.displayKue(); // output: Kue warna : Green Kue rasa : Green Tea
+
+        Kue kueCoklat = new Kue();
+        kueCoklat.ubahWarna("Kuning");
+        kueCoklat.ubahRasa("Pisang");
+        kueCoklat.displayKue(); // output: Kue warna : Kuning Kue rasa : Pisang
+    }
+}
+
+Dalam contoh kode diatas bisa kita lihat kita memiliki class Kue, dalam class kue kita memiliki attriute:
+- warna
+- rasa
+dan method:
+- ubahRasa()
+- ubahWarna()
+- displayKue()
+
+Pada attribute tersebut kita telah memberikan nilai default yaitu warna coklat dan rasa coklat.
+
+Lalu pada class Main kita telah membuat 2 Object kue
+Kue pertama: memiliki warna Green dan rasa Green Tea
+Kue kedua: memiliki warna Kuning dan rasa Coklat
+
+Lalu ketika kita penggil method displayKue masing-masing menampilkan jenis kue yang berbeda.

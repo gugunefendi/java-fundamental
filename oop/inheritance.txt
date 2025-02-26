@@ -1,0 +1,43 @@
+Inheritance atau Pewarisan
+
+Inheritance atau pewarisan adalah dimana sebuah object mewarisi attribut dan method dari object lainnya.
+
+Contoh kode:
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Kucing kucingSaya = new Kucing();
+		kucingSaya.nama = "Milo";
+		kucingSaya.makan();
+		kucingSaya.suara();
+		
+	}
+
+}
+
+public class Hewan {
+	
+	String nama;
+	
+	void makan() {
+		System.out.println(nama + "sedang makan");
+	}
+
+}
+
+public class Kucing extends Hewan {
+	
+	void suara() {
+		System.out.println(nama + "mengeong: Meow!");
+	}
+
+}
+
+Output dari kode diatas adalah:
+Milo sedang makan
+Milo mengeong: Meow!
+
+Dari kode diatas ada sebuah object Kucing yang mewarisi Object Hewan
+
+Makanya ketika membuat sebuah object Kucing kita bisa memakai attribut dan method dari Hewan.

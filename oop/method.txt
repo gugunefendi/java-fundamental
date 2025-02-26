@@ -1,0 +1,38 @@
+Method
+
+Method adalah sebuah blok kode untuk melakukan tugas tertentu.
+
+Struktur dasar method:
+[access_modifier] return_type namaMethod([paramater])
+
+Di dalam Java kamu akan menemukan sintaks public static void
+Nah public adalah access_modifier artinya dapat diakses dari luar class.
+Static berati method tersebut dapat di panggil tanpa membuat object terlebih dahulu, bisa di panggil setelah NamaClass.namaMethod
+Lalu void artinya method tersebut tidak mengembalikkan sebuah nilai.
+
+Method memiliki 4 tipe:
+1. Method tanpa return dan tanpa parameter
+2. Method tanpa return dan dengan paramater
+3. Method dengan return tanpa parameter
+4. Method dengan return dan dengan paramter
+
+1.
+void greetings() {
+    System.out.println("Hello Java");
+}
+
+2.
+void setMerek(String merek) {
+    this.merek = merek;
+}
+
+3.
+String getMerek() {
+    return this.merek;
+}
+
+4.
+String changeMerek(String newMerek) {
+    this.merek = newMerek;
+    return this.merek;
+}
