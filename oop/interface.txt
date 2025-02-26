@@ -1,0 +1,32 @@
+Interface
+
+Interface adalah sebuah kontrak antara class dengan dunia luar.
+
+Sederhananya:
+Jika sebuah class meng-implements ke sebuah Interface maka class tersebut harus memiliki method
+yang telah di definisikan didalam interface.
+
+Contoh:
+public interface Mobil {
+	
+	void maju();
+	
+	void mundur();
+
+}
+
+public class MobilBalap implements Mobil {
+	
+	public void maju() {
+		System.out.println("Maju");
+	}
+	
+	public void mundur() {
+		System.out.println("Mundur");
+	}
+
+}
+
+Dari contoh kode diatas bisa kita lihat bahwa class MobilBalap meng-implement ke sebuah interface Mobil.
+Maka class MobilBalap harus mengimplementasikan sebuah method maju() dan method mundur(). Jika tidak
+maka akan error.
