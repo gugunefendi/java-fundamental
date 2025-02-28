@@ -51,6 +51,30 @@ public class Main {
         System.out.println("Symbol\t : " + mySymbol);
         System.out.println("String\t : " + myString);
 
+        // REFERENCE VARIABLE
+        System.out.println("\nSWAP TWO VARIABLES");
+        String shirtsBasket = "Shirt";
+        String pantsBasket = "Pants";
+
+        System.out.println("Red basket\t : " + shirtsBasket);
+        System.out.println("Blue basket\t : " + pantsBasket);
+
+        String temp;
+        temp = shirtsBasket;
+        shirtsBasket = pantsBasket;
+        pantsBasket = temp;
+
+        System.out.println("Red basket\t : " + shirtsBasket);
+        System.out.println("Blue basket\t : " + pantsBasket);
+
+        // CHANGE VALUE IN REFERENCE
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = arr1;
+
+        arr2[0] = 99; // change arr2 have change arr1 to
+        System.out.println(arr1[0]);
+        System.out.println(arr2[0]);
+
     }
 
 }
