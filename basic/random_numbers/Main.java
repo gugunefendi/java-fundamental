@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int randomInt = random.nextInt();
+        
+        int randomInt = random.nextInt(5)+1; // bound 5 is maximal number + 1 is number start from 1
         double randomDouble = random.nextDouble();
         boolean randomBoolean = random.nextBoolean();
 
