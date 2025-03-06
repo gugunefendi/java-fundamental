@@ -2,6 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // if statement = perfoms a block of code if it's condition evaluates to be true
+
         int age = 19;
 
         if(age >= 75) {
