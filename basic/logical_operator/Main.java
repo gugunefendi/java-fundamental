@@ -36,6 +36,8 @@ public class Main {
             System.out.println("You are still playing the game *pew pew*");
         }
 
+        scanner.close();
+
         // ! (NOT)
         boolean isCompleted = true;
         if(!isCompleted) {
