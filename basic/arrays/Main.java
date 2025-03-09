@@ -21,6 +21,16 @@ public class Main {
         for(int i = 0; i < fruits.length; i++ ) {
             System.out.println(fruits[i]);
         }
+
+        // array int
+        int[] scores = new int[3];
+        scores[0] = 99;
+        scores[1] = 78;
+        scores[2] = 54;
+
+        for(int i = 0; i < scores.length; i++ ) {
+            System.out.println(scores[i]);
+        }
     }
     
 }
