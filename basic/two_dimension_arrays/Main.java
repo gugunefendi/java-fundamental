@@ -24,6 +24,32 @@ public class Main {
                 System.out.print(cars[i][j] + " ");
             }
         }
+
+        // second way to create 2 dimension array
+        String[][] fruits = {
+            {
+                "Apple",
+                "Apricot",
+                "Avocado"
+            },
+            {
+                "Banana",
+                "Blackberry",
+                "Blueberry"
+            },
+            {
+                "Cherry",
+                "Cranberry",
+                "Cantaloupe"
+            }
+        };
+
+        for(int i = 0; i < fruits.length; i++) {
+            System.out.println();
+            for(int j = 0; j < fruits.length; j++) {
+                System.out.print(fruits[i][j] + " ");
+            }
+        }
     }
     
 }
