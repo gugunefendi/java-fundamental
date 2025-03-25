@@ -1,0 +1,23 @@
+Access modifiers in java use to set accessible level a class, method or variable
+
+Java has 4 access modifiers
+======================================================
+Modifiers    Class   Package Subclass    Pakcage
+public       Y       Y       Y           Y
+protected    Y       Y       Y           N
+no modifier  Y       Y       N           N
+private      Y       N       N           N
+=======================================================
+
+public      = can accessed from anywhere, same class, subclass, same package or another package
+
+private     =   1. only can access from class it self
+                2. can not access from another class, including subclass
+                3. if want use from other class use method public as an intermediary (getter and setter)
+
+protected   =   1. can be accessed from same class and subclass
+                2. can be accessed from same package, but if different package only can be accessed from sub class
+                
+default or no modifier = 1. only can accessed from same package
+                         2. can not accessed from other package, even by subclass
+         
