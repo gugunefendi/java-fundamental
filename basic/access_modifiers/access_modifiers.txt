@@ -16,7 +16,7 @@ private     =   1. only can access from class it self
                 3. if want use from other class use method public as an intermediary (getter and setter)
 
 protected   =   1. can be accessed from same class and subclass
-                2. can be accessed from same package, but if different package only can be accessed from sub class
+                2. can be accessed from onother package, but if different package only can be accessed from sub class
                 
 default or no modifier = 1. only can accessed from same package
                          2. can not accessed from other package, even by subclass
