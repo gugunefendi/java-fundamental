@@ -4,5 +4,6 @@ public class Salary {
 
     public float salaryInJanuary = 100000;
     protected double extraTime = 12.5;
+    String defaultMessage = "Hello Java";
     
 }
