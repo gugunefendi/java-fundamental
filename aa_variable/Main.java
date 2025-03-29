@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
+                /*
         Penamaan Variabel
         1. Peka terhadap huruf besar-kecil
         2. Dimulai dengan huruf
@@ -43,9 +43,43 @@ public class Main {
 
         Literal char dan String
         Gunakan kutip satu '' untuk char dan kutip dua "" untuk string.
+        */
 
-        
-        */       
+        /*
+         * Ketika membuat variabel sebagai atribut object tidak perlu di inisalisasi
+         * karena variabel akan diberikan nilai default oleh java
+         * contoh:
+         * class Example {
+         *      int myInt;
+         *      double myDouble;
+         * }
+         * 
+         * Namun jika membuat variabel lokal (didalm method variabel harus di inisialisai),
+         * Kalau tidak akan error
+         * contoh:
+         * class Example2 {
+         *      public static void main(String[] args) {
+         *          int myInt = 0;
+         *          double myDouble = 0;
+         *      }
+         * }
+         */
+
+        // mendeklarisikan varibel
+        byte myByte = 126;
+        double myDouble = 14.12345678912345;
+        short myShort = 32600;
+        float myFloat = 12.1234567f;
+        int myInt = 1000000;
+        long myLong = 23232878765656655L;
+        char myChar = 'A';
+
+        System.out.println(myByte);
+        System.out.println(myDouble);
+        System.out.println(myShort);
+        System.out.println(myFloat);
+        System.out.println(myLong);
+        System.out.println(myChar);
 
     }
     
