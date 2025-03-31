@@ -116,7 +116,40 @@ public class Main {
           usernames[1][0] = "Budi";
           usernames[1][1] = "Bagus";
           System.out.print(usernames[0][0] + "\t" + usernames[0][1] + "\n");
-          System.out.print(usernames[1][0] + "\t" + usernames[1][1]);
+          System.out.print(usernames[1][0] + "\t" + usernames[1][1] + "\n");
+
+          String[][][] x = {
+            {
+                {
+                    "aaa",
+                    "vvv",
+                    "xxx"
+                }
+            },
+            {
+                {
+                    "bbb"
+                }
+            }, 
+            {
+                {
+                    "ccc"
+                }
+            }, 
+            {
+                {
+                    "ddd"
+                }
+            }
+          };
+
+          System.out.println(x[0][0][0]);
+          System.out.println(x[1][0][0]);
+          System.out.println(x[0][0][2]);
+
+
+
+          
 
     }
     
