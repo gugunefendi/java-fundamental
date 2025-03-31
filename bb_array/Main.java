@@ -107,7 +107,17 @@ public class Main {
 
           String[] names = {"gunawan", "adi", "budi"};
           System.out.println(names[0]);
-         
+
+          // Array Multidimensi
+          String[][] usernames;
+          usernames = new String[2][2]; // 2 baris dan 2 kolom
+          usernames[0][0] = "Adi";
+          usernames[0][1] = "Ahmad";
+          usernames[1][0] = "Budi";
+          usernames[1][1] = "Bagus";
+          System.out.print(usernames[0][0] + "\t" + usernames[0][1] + "\n");
+          System.out.print(usernames[1][0] + "\t" + usernames[1][1]);
+
     }
     
 }
