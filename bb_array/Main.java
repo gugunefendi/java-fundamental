@@ -1,5 +1,8 @@
 package bb_array;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -163,7 +166,79 @@ public class Main {
             System.out.print(coffe + " ");
           }
 
+          System.out.println();
+
+          // Java menyediakan beberapa metode untuk manipulasi array 
+          // seperti (common tasks, copying array, sorting array and searching array) di class java.util.Arrays
           
+          // copy array dengan method copyOfRange
+          System.out.println("===== COPY ARRAY =====");
+          String[] copyFrom2 = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",   
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",      
+            "Marocchino", "Ristretto"
+          };
+
+          String[] copyTo2 =  Arrays.copyOfRange(copyFrom2, 3, 9);
+          for(String coffe : copyTo) {
+            System.out.print(coffe + " ");
+          }
+
+          System.out.println();
+
+          // ARRAY TO STRING
+          System.out.println("===== ARRAY TO STRING =====");
+          System.out.println(Arrays.toString(copyFrom2));
+
+          // EQUALS
+          System.out.println("===== EQUALS =====");
+          int[] fisrtNumbers = {12, 12, 15};
+          int[] secondNumbers = {12, 12, 15};
+          int compareNumbers = Arrays.compare(fisrtNumbers, secondNumbers); // return 0 jika array sama
+          System.out.println(compareNumbers);
+
+          // COMPARE
+          System.out.println("===== COMPARE ARRAY =====");
+          String[] fruitsOne = {"Apple", "Banana", "Avocado"};
+          String[] fruitsTwo = {"Apple", "Banana", "Avocado"};
+          System.out.println(Arrays.compare(fruitsOne, fruitsTwo)); // return 0 jika array sama
+
+          // SORTING
+          System.out.println("===== SORTING ARRAY =====");
+          int[] listNumbers = { 12, 34, 6, 8 };
+          Arrays.sort(listNumbers);
+          for(int i : listNumbers) {
+            System.out.println(i);
+          }
+          // SORTING STRING
+          String[] abjad = {"e", "c", "b", "a", "d"};
+          Arrays.sort(abjad);
+          for(String i : abjad) {
+            System.out.println(i);
+          }
+
+          // FILL ARRAY
+          System.out.println("===== FILL ARRAY =====");
+          int[] myNumbers = {12, 14, 18};
+          Arrays.fill(myNumbers, 10); // mengisi semua elemen dengan nilai 10
+          for(int i : myNumbers) {
+            System.out.println(i);
+          }
+
+          System.out.println("===== FILL ARRAY FROM INDEX TO INDEX =====");
+          int[] mySecondNumbers = {100, 200, 300, 400, 500};
+          Arrays.fill(mySecondNumbers, 1, 3, 1000);
+          for(int i : mySecondNumbers) {
+            System.out.println(i);
+          }
+
+          // ARRAY LENGTH
+          System.out.println("===== ARRAY LENGTH =====");
+          String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+          System.out.println(cars.length);
+
+
+
 
     }
     
