@@ -147,7 +147,21 @@ public class Main {
           System.out.println(x[1][0][0]);
           System.out.println(x[0][0][2]);
 
+          
+          // CCOPY ARRAY
+          // class System memiliki sebuah method arraycopy, method ini bisa digunakan untuk mengcopy data
+          // dari suatu array ke array yang lain:
+          String[] copyForm = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",   
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",      
+            "Marocchino", "Ristretto"
+          };
 
+          String[] copyTo = new String[5];
+          System.arraycopy(copyForm, 2, copyTo, 0, 5); // 2 adalah posisi awal elemen yang akan disalin, 5 adalah posisi terkahir elemen yang akan disalin
+          for(String coffe : copyTo) {
+            System.out.print(coffe + " ");
+          }
 
           
 
