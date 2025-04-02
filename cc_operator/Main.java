@@ -81,6 +81,29 @@ public class Main {
            // logical
            System.out.println("Logical true\t : " + true);
            System.out.println("Logical false\t : " + !true);
+
+           // EQUALITY and RELATIONAL
+           // == != > >= < <=
+           int value1 = 1;
+           int value2 = 2;
+           if(value1 == value2) {
+            System.out.println("value1 == value2");
+           }
+           if(value1 != value2) {
+            System.out.println("value1 != value2");
+           }
+           if(value1 > value2) {
+            System.out.println("value1 > value2");
+           }
+           if(value1 >= value2) {
+            System.out.println("value1 >= value2");
+           }
+           if(value1 < value2) {
+            System.out.println("value1 < value2");
+           }
+           if(value1 <= value2) {
+            System.out.println("value1 <= value2");
+           }
            
 
 
