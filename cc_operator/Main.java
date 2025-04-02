@@ -46,11 +46,44 @@ public class Main {
           int multiplication = numberOne * numberTwo;
           int division = numberOne / numberTwo;
           int modulus = numberOne % numberTwo;
-          System.out.println("Addition\t :" + addition);
-          System.out.println("Subtraction\t :" + subtraction);
-          System.out.println("multiplication\t :" + multiplication);
-          System.out.println("Division\t :" + division);
-          System.out.println("Modulus\t\t :" + modulus);
+          System.out.println("Addition\t : " + addition);
+          System.out.println("Subtraction\t : " + subtraction);
+          System.out.println("multiplication\t : " + multiplication);
+          System.out.println("Division\t : " + division);
+          System.out.println("Modulus\t\t : " + modulus);
+          System.out.println();
+
+          /*
+           * Unary Operators
+           * 
+           * Operator   Description
+           * +          Unary plus
+           * -          Unary minus
+           * ++         Increment
+           * --         Decrement
+           * !          Logical
+           */
+
+           // unary +
+           int numberThree = +5; // tidak mengubah nilai hanya menegaskan bahwa nilainya positif
+           System.out.println("Unary Plus\t : " + numberThree); // 5
+           // unary -
+           int numberFour = -5; // tidak mengubah nilai hanya menegaskan bahwa nilainya negatif
+           System.out.println("Unary Minus\t : " + numberFour); // -5
+           // increment
+           int numberFive = 2;
+           numberFive++;
+           System.out.println("Increment\t : " + numberFive); // 3
+           // decrement
+           int numberSix = 7;
+           numberSix--;
+           System.out.println("Decrement\t : " + numberSix); // 6
+           // logical
+           System.out.println("Logical true\t : " + true);
+           System.out.println("Logical false\t : " + !true);
+           
+
+
 
 
     }
