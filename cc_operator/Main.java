@@ -104,6 +104,24 @@ public class Main {
            if(value1 <= value2) {
             System.out.println("value1 <= value2");
            }
+           System.out.println();
+
+           // CONDITIONAL
+           int value3 = 1;
+           int value4 = 2;
+           if((value3 == 1) && (value4 == 2)) {
+            System.out.println("value3 is 1 AND value4 is 2");
+           }
+           if((value3 == 1) || (value4 == 1)) {
+            System.out.println("value3 is 1 OR value4 is 1");
+           }
+
+           // TENARY OPERATOR
+           int value5 = 8;
+           int value6 = 2;
+           boolean someCondition = true;
+           char result = value5 < value6 ? '<' : '>';
+           System.out.printf("%d%c%d", value5, result, value6);
            
 
 
