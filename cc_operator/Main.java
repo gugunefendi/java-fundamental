@@ -122,6 +122,18 @@ public class Main {
            boolean someCondition = true;
            char result = value5 < value6 ? '<' : '>';
            System.out.printf("%d%c%d", value5, result, value6);
+           System.out.println();
+
+           // COMPARISON OPERATOR
+           Parent obj1 = new Parent();
+           Child obj2 = new Child();
+
+           System.out.println("obj1 instance of Parent: " + (obj1 instanceof Parent));
+           System.out.println("obj1 instance of Child: " + (obj1 instanceof Child));
+           System.out.println("obj1 instance of MyInterface: " + (obj1 instanceof MyInterface));
+           System.out.println("obj2 instance of Parent: " + (obj2 instanceof Parent));
+           System.out.println("obj2 instance of Child: " + (obj2 instanceof Child));
+           System.out.println("obj2 instance of MyInterface: " + (obj2 instanceof MyInterface));
            
 
 
