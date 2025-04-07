@@ -31,7 +31,24 @@ public class Main {
          for(String name : splittedUsername) {
             System.out.println(name);
          }
-         
+
+         /*
+          * SPECIAL CHARACTER
+          untuk menambahakan spesial karakter di dalam java kamu harus menambahkan backsplash
+          contoh salah: String text = "Ini adalah tutorial "Java" yang keren"; // SALAH
+          contoh benar: String text = "Ini adalah tutorial \"Java\" yang keren"; // BENAR
+          kamu juga menggunakan escape lain:
+          1. \n new line
+          2. \t tab
+          3. \b backsplash
+          */
+
+          String text = "Ini adalah tutorial \"Java\" yang keren";
+          System.out.println(text);
+
+          String textTwo = "Saya akan menjadi \"PROGRAMMER\" dengan gaji 100juta per bulan \t Saya Yakin!";
+          System.out.println(textTwo);
+
     }
     
 }
