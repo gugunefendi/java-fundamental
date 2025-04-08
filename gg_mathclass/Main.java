@@ -35,6 +35,18 @@ public class Main {
          // mengembalikkan nilai akar kuadrat
          System.out.println(Math.sqrt(64));
 
+         // Math.abs()
+         // Mengembalikkan nilai abosulte (positif)
+         System.out.println(Math.abs(-4.7)); //output 4.7
+
+         // Math.random()
+         // Mengembalikkan nilai acak antara 0.0 (inklusif) dan 1.0 (eksklusif)
+         System.out.println(Math.random());
+
+         System.out.println((int) (Math.random() * 10)); // tambahkan rentan antara 0 - 10
+
+         System.out.println((int) (Math.random() * 100) + 1); // tambahkan rentan antara 1 - 100
+
     }
     
 }
