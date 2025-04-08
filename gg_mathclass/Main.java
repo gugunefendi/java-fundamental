@@ -26,6 +26,15 @@ public class Main {
          }
 
          System.out.println("Nilai terbesar dari array adalah: " + max);
+
+         // Math.min()
+         // mengembalikkan nilai terkecil
+         System.out.println(Math.min(5, 10)); // output 5
+
+         // Math.sqrt()
+         // mengembalikkan nilai akar kuadrat
+         System.out.println(Math.sqrt(64));
+
     }
     
 }
