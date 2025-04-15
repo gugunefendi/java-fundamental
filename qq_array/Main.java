@@ -29,6 +29,19 @@ public class Main {
 
         // mencetak panjang array
         System.out.println(cars.length);
+
+
+        // looping array
+        // looping menggunakan for loop
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
+        }
+
+        // loping menggunakan foreach
+        for (String elemen : cars) {
+            System.out.println(elemen);
+        }
+
     }
     
 }
