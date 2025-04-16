@@ -42,6 +42,38 @@ public class Main {
             System.out.println(elemen);
         }
 
+        // array multidimension
+        // array multidimensi adalah array didalam array
+        // array multidimensi berguna ketika kita ingin menyimpan data seperti tabel (dengan baris dan kolom)
+        // contoh
+        // name    address     position
+        // Adi     Jakarta     Web Developer
+        // Budi    Bandung     Mobile Developer
+        // Cici    Surabaya    Designer
+
+        String[][] employees = { {"Adi", "Jakarta", "Web Developer"}, {"Budi", "Bandung", "Mobile Developer"}, {"Cici", "Surabaya", "Designer"} };
+        
+        // akses element
+        System.out.println(employees[0][1]);
+
+        // ubah value pada element
+        employees[0][1] = "Medan";
+        System.out.println(employees[0][1]);
+
+        // loop array multidimensi
+        for (int i = 0; i < employees.length; i++) {
+            for (int j = 0; j < employees[i].length; j++) {
+                System.out.println(employees[i][j]);
+            }
+        }
+
+        // loop array multidimensi menggunakan foreach
+        int[][] myNumbers = {{1,2,3}, {4,5,6}};
+        for (int[] i : myNumbers) {
+            for (int j : i) {
+                System.out.println(j);
+            }
+        }
     }
     
 }
