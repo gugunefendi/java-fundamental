@@ -12,6 +12,16 @@ public class Main {
         // call method that return a string value
         System.out.println(displayName("Gunawan Efendi"));
 
+        // method overloading
+        int calcInteger = addInteger(10, 20);
+        System.out.println(calcInteger);
+
+        float calcFloat = addFloat(12.5f, 12.6f);
+        System.out.println(calcFloat);
+
+        double calcDouble = addDouble(10.500000000000, 10.500000000000, 10.500000000000);
+        System.out.println(calcDouble);
+
 
     }
 
@@ -25,5 +35,28 @@ public class Main {
     static String displayName(String name) {
         return name + " is a Java Developer";
     }
+
+    // METHOD OVERLOADING
+    /*
+     * with method overloading we can use many methods with same name but different parameter
+     * example:
+     * int myMethod(int x)
+     * float myMethod(float x)
+     * double myMethod(double x, double y)
+     * 
+     * you can see example above, we have 3 method with same name but we can use different parameter
+     */
+
+     static int addInteger(int x, int y) {
+        return x + y;
+     }
+
+     static float addFloat(float x, float y) {
+        return x + y;
+     }
+
+     static double addDouble(double x, double y, double z) {
+        return (x + y) + z;
+     }
     
 }
