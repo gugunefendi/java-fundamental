@@ -22,6 +22,9 @@ public class Main {
         double calcDouble = addDouble(10.500000000000, 10.500000000000, 10.500000000000);
         System.out.println(calcDouble);
 
+        // method scope
+        displayAge("Gunawan");
+
 
     }
 
@@ -58,5 +61,27 @@ public class Main {
      static double addDouble(double x, double y, double z) {
         return (x + y) + z;
      }
+
+     /*
+      * METHOD SCOPE
+
+      variabel yang di deklarasikan didalam sebuah blok kode
+      hanya dapat diakses dari dalam blok kode tersebut
+      */
+
+      static void displayAge(String name) {
+        if (name == "Gunawan") {
+            int age = 30;
+            System.out.println("You are " + age + " years old");
+        } else {
+            // kamu tidak bisa menggunakan variabek age disini
+            // System.out.println(age + "Unknown"); // Ini akan eror
+            System.out.println("Unknown");
+        }
+
+        // kamu juga tidak bisa menggunakan variabel age disini
+        // System.out.println(age + "Unknown"); // Ini akan eror
+
+      }
     
 }
