@@ -22,6 +22,17 @@ public class Main {
          * yaitu kondisi saat fungsi behenti memanggil dirinya sendiri
          * dalam contoh method sum() kondisi berhentinya adalah jika value yang di kirimkan tidak lebih dari 0
          */
+
+         /*
+          * Latihan recursion
+          */
+
+          int calcFactorial = factorial(3);
+          System.out.println(calcFactorial);
+
+          int calcFibbonaci = fibbonaci(6);
+          System.out.println(calcFibbonaci);
+
     }
 
     static int sum(int k) {
@@ -33,6 +44,22 @@ public class Main {
         } else {
             return 0;
         }
-     }
+    }
+
+    static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+
+        return n * factorial(n - 1);
+    }
+
+    static int fibbonaci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibbonaci(n - 1) + fibbonaci(n - 2);
+        }
+    }
     
 }
