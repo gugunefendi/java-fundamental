@@ -61,7 +61,20 @@ public class Main {
          * Declarative      Hasil akhir, bukan proses           SQL, React.js
          * Event-Driven     Event dan Respons terhadap event    JS (browser)
          * Logic            Aturan dan inferensi logis          Prolog
-         * ---------------------------------------------------------------------         *      
+         * ---------------------------------------------------------------------  
+         * 
+         * 
+         * 
+         * Keunggulan menggunakan OOP
+         * - OOP lebih cepat dan mudah dijalankan
+         * - OOP menyediakan struktur yang jelas untuk program
+         * - OOP membantu menjaga kode Java tetap DRY (Don't Repeat Yourself) yang membuat kode lebih mudah di pelihara, di modifikasi, dan di debug
+         * - OOP memungkinkan pembuatan aplikasi yang dapat digunakan kembali sepernuhnya dengan waktu yang lebih sedikit dan waktu pengembangan yang lebih singkat
+         * 
+         * Apa itu Class dan Object?
+         * Class dan Object adalah dua aspek utama dalam pemrograman berorientasi object
+         * 
+         *        *     
          */
     }
     
