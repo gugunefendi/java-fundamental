@@ -74,7 +74,7 @@ public class Main {
             int age = 30;
             System.out.println("You are " + age + " years old");
         } else {
-            // kamu tidak bisa menggunakan variabek age disini
+            // kamu tidak bisa menggunakan variabel age disini
             // System.out.println(age + "Unknown"); // Ini akan eror
             System.out.println("Unknown");
         }
