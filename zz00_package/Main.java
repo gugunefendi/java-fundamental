@@ -1,6 +1,9 @@
 package zz00_package;
 import java.util.Scanner; //import class Scanner
+
 import java.util.*;
+
+import zz_encapsulation.*; // menggunakan package yang kita buat sendiri
 
 public class Main {
 
@@ -53,6 +56,16 @@ public class Main {
           for (int number : numbers) {
             System.out.println(number);
           }
+
+          /*
+           * Menggunakan package yang kita buat sendiri
+           * contoh di atas kita sudah import sebuah package zz_encapsulation yang kita buat sendiri
+           */
+
+           // untuk menajalankan ini karena kita import package lain
+           // maka kita harus compile dulu
+          Employee employeex = new Employee("Gunawan Efendi");
+          System.out.println(employeex.getName());
 
     }
     
