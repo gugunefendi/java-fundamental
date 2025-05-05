@@ -1,4 +1,4 @@
-package zz00_package;
+package zzaa_package;
 import java.util.Scanner; //import class Scanner
 
 import java.util.*;
