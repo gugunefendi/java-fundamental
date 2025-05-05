@@ -5,7 +5,7 @@ public class Employee {
     private String name; // identifier atribut private
 
     // constructo
-    Employee(String name) {
+    public Employee(String name) {
         this.setName(name); // ketika inisialisasi object langsung panggil method setName
     }
 
