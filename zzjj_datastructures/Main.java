@@ -33,7 +33,40 @@ public class Main {
           System.out.println(cars);
 
 
+          /*
+           * LinkedList
+           * adalah bekerja seperti ArrayList, tetapi menyimpan elemen-elemen dalam satu rantai atau node saling terhubung.
+           */
 
+           /*
+            Kapan menggunakan ArrayList
+            - Ketika sering mengakses data secara acak(misalnya: list.get(i))
+            - Saat ukuran data tidak sering berubah-ubah secara bbesar
+
+            Kapan Menggunakan LinkedList
+            - Jika kita sering menambah/menghapus diawal atau tengah list
+            - Saat tidak terlalu butuh akses data acak dengan cepat
+
+            Conoth kasus:
+            Pakai ArrayList
+            Kita membangun E-Commerce. User sering melihat daftar produk dan memilih produk tertentu berdasarkan indeks (misalnya produk ke-10, ke-20 dll)
+            Kenapa menggunakan ArrayList?
+            - Data lebih sering diakses berdasarkan indeks
+            - Jarang ada penambahan/penyisipan data di tengah-tengah
+
+            Pakai LinkedList
+            Ketika kita membangun sebuah fitur "undo" pada aplikasi teks editor, dimana setiap perubahan dimasukkan kedalam list,
+            dan bisa dihapus/di-undo dari belakang.
+            Kenapa menggunakan LinkedList?
+            - Sering menambah atau menghapus dari ujung list (awal atau akhir)
+            - Tidak butuh akses acak (random access)
+            */
+
+          LinkedList<String> users = new LinkedList<String>();
+          users.add("Adi");
+          users.add("Budi");
+          users.add("Cici");
+          System.out.println(users);
 
 
 
