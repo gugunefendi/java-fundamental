@@ -3,6 +3,7 @@ package zzjj_datastructures;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Main {
 
@@ -79,6 +80,20 @@ public class Main {
            capitalCities.put("Germany", "Berlin");
            capitalCities.put("USA", "Washington DC");
            System.out.println(capitalCities);
+
+           /*
+            * HashSet
+            HashSet adalah struktur data yang menyimpan sekumpulan elemen unik.
+            HashSet tidak menyimpan pasangan key-value, hanya menyimpan elemen tannpa duplikat.
+            */
+
+            HashSet<String> mobil = new HashSet<String>();
+            mobil.add("Volvo");
+            mobil.add("BMW");
+            mobil.add("Ford");
+            mobil.add("BMW");
+            mobil.add("Mazda");
+            System.out.println(mobil);
 
     }
     
