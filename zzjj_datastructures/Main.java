@@ -2,6 +2,7 @@ package zzjj_datastructures;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.HashMap;
 
 public class Main {
 
@@ -68,7 +69,16 @@ public class Main {
           users.add("Cici");
           System.out.println(users);
 
+          /*
+           * Hashmap
+           * Hashmap adalah struktur data yang menyimpan data dalam bentuk pasangan kunci dan nilai (key-value pair).
+           */
 
+           HashMap<String, String> capitalCities = new HashMap<String, String>();
+           capitalCities.put("England", "London");
+           capitalCities.put("Germany", "Berlin");
+           capitalCities.put("USA", "Washington DC");
+           System.out.println(capitalCities);
 
     }
     
