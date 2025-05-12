@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main {
 
@@ -94,6 +95,18 @@ public class Main {
             mobil.add("BMW");
             mobil.add("Mazda");
             System.out.println(mobil);
+
+            /*
+             * Iterator
+             * Ketika belajar data structure kita akan sering mendengar tentang iterator juga.
+             * Sebuah iterator adalah cara untuk me-looping element-elemen didalam struktur data
+             * 
+             */
+            Iterator<String> it = mobil.iterator();
+
+            while(it.hasNext()) { // hasNext() mengembalikkan true jika masih ada elemenberikutnya
+                System.out.println(it.next()); // next() mengembalikan elemen berikutnya dalam iterasi
+            }
 
     }
     
