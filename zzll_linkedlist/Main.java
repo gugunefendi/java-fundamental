@@ -1,5 +1,7 @@
 package zzll_linkedlist;
 
+import java.util.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,6 +55,21 @@ public class Main {
          * getLast()        get item at the last of the list
          */
 
+         LinkedList<String> cars = new LinkedList<String>();
+         cars.add("Volvo");
+         cars.add("BMW");
+         cars.add("Ford");
+
+         cars.addFirst("Mazda");
+         System.out.println(cars);
+
+         cars.addLast("Toyota");
+         System.out.println(cars);
+
+         System.out.println(cars.getFirst());
+
+         cars.removeFirst();
+         System.out.println(cars);
     }
     
 }
