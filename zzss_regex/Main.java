@@ -58,9 +58,9 @@ public class Main {
           Patameter pertama dari metode Pattern.compile() adalah pola. Pola ini menjelaskan apa yang sedang kita cari
 
           Expression    Description
-          [abc]         Mencari 1 karakter diantara tanda kurung
-          [^abc]        Mencari 1 karakter yang tidak diantara tanda kurung
-          [0-9]         Mencari 1 karakter antara 0 sampai 9 
+          [abc]         Mencari 1 karakter diantara tanda kurung (a, b, atau c)
+          [^abc]        Mencari 1 karakter yang tidak ada diantara tanda kurung (huruf apapun kecuali a, b atau c)
+          [0-9]         Mencari 1 karakter antara 0 sampai 9 (1, 2, 3 sampai 9)
           */
 
           String myPattern = "[abc]";
@@ -71,6 +71,18 @@ public class Main {
             System.out.println("Yes is match");
           } else {
             System.out.println("No Not Match!");
+          }
+
+          String myPattern3 = "[^x]";
+          Pattern pattern3 = Pattern.compile(myPattern3);
+        //   Matcher matcher3 = pattern3.matcher("a"); // return true karena huruf a bukan x 
+          Matcher matcher3 = pattern3.matcher("x"); // return false karena huruf x cocok dengan pola
+          boolean isMatch3 = matcher3.find();
+
+          if(isMatch3) {
+            System.out.println(true);
+          } else {
+            System.out.println(false);
           }
 
     }
