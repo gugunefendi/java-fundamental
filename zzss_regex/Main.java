@@ -85,6 +85,18 @@ public class Main {
             System.out.println(false);
           }
 
+          String input = "Ada angka 5 dan 9 di sini, tapi bukan huruf a atau b.";
+
+          // Pola regex: cari 1 karakter antara 0 sampai 9
+          Pattern pattern4 = Pattern.compile("[0-9]");
+          Matcher matcher4 = pattern4.matcher(input);
+
+          System.out.println("Angka yang ditemukan:");
+
+          while (matcher4.find()) {
+              System.out.println("Karakter: " + matcher4.group() + " pada index: " + matcher4.start());
+          }
+
     }
     
 }
