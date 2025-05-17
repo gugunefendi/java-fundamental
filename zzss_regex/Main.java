@@ -85,9 +85,10 @@ public class Main {
             System.out.println(false);
           }
 
+          // Start pola mencari 0 - 9
+
           String input = "Ada angka 5 dan 9 di sini, tapi bukan huruf a atau b.";
 
-          // Pola regex: cari 1 karakter antara 0 sampai 9
           Pattern pattern4 = Pattern.compile("[0-9]");
           Matcher matcher4 = pattern4.matcher(input);
 
@@ -96,6 +97,29 @@ public class Main {
           while (matcher4.find()) {
               System.out.println("Karakter: " + matcher4.group() + " pada index: " + matcher4.start());
           }
+
+          // end
+
+          /*
+           * Metacharacter
+           * Metacharacter adalah character dengan makna khusus
+           * Simbol   Fungsi                                                    Contoh
+           * |        OR | atau                                                 cat|dog|fish
+           * .        DOT | mewakili satu karakter apapun, kecuali new line \n  a.c (jika abc, a-c atau axc maka cocok)
+           * ^        CARET | cocok dengan awal string                          ^hello ("hello world" => hello cocok karena awal string)
+           * $        DOLAR | cocok dengan akhir string                         $world ("hello world" => world cocok karena akhir string)
+           * \d       DIGIT | mencari angka 0-9                                 \\d ("ini adalah angka 9" => 9 cocok karena angka)
+           * \s       WHITESPACE | spasi, tab, newline                          \\s ("hello world" => " " spasi cocok antara hello dan world)
+           * \b       BOUNDARY | mencocokkan batas kata                         \bword ("wordplay is not word" => word cocok karena bukan bagian dari kata lain)
+           * 
+           */
+
+           Pattern pattern5 = Pattern.compile("cat|dog|fish");
+           Matcher matcher5 = pattern5.matcher("I have dog, cat and fish in my house");
+          //  boolean isMatch5 = matcher5.find();
+           while (matcher5.find()) {
+              System.out.println(matcher5.group() + " index ke " + matcher5.start());
+           }
 
     }
     
