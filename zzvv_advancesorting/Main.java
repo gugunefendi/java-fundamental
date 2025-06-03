@@ -61,6 +61,30 @@ public class Main {
             System.out.println(i);
         }
 
+        /*
+         * Comparable Interface
+         * Comparable Interface memungkinkan sebuah object untuk menentukan aturan pengurutannya sendiri
+         * dengan metode compareTo()
+         * 
+         * Metode compareTo() mengambil suatu object sebagai argumen dan membandingkannya dengan argumen
+         * tersebut untuk memutuskan object mana yang harus didahulukan dalam suatu List.
+         * 
+         * Metode compareTo() mengembalikkan angka yang:
+         * - Negatif jika yang sebanding harus di letakkan pertama dalam list
+         * - Positif jika objek lainnya harus di letakkan pertama pada list
+         * - Nol jika urutannya tidak penting
+         */
+
+         ArrayList<Cycle> myCycles = new ArrayList<Cycle>();
+        myCycles.add(new Cycle("BMX", 1999));
+        myCycles.add(new Cycle("Pacific", 2006));
+        myCycles.add(new Cycle("Olympic", 1970));
+
+        Collections.sort(myCycles);
+
+        for (Cycle c: myCycles) {
+            System.out.println("Brand: " + c.brand );
+        }
 
     }
         
