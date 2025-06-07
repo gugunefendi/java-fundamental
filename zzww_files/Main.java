@@ -2,6 +2,7 @@ package zzww_files;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.FileWriter;
 
 public class Main {
     
@@ -31,6 +32,17 @@ public class Main {
             } else {
                 System.out.println("File already exist.");
             }
+         } catch (IOException e) {
+            System.out.println("An error occured.");
+            e.printStackTrace();
+         }
+
+         // menulis file
+         try {
+            FileWriter myWriter = new FileWriter("two-file.txt");
+            myWriter.write("I Love Java!");
+            myWriter.close();
+            System.out.println("Successfulyy wrote to the file");
          } catch (IOException e) {
             System.out.println("An error occured.");
             e.printStackTrace();
