@@ -3,6 +3,8 @@ package zzww_files;
 import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 public class Main {
     
@@ -47,8 +49,33 @@ public class Main {
             System.out.println("An error occured.");
             e.printStackTrace();
          }
-         
 
+         // read file
+         // untuk membaca text didalam sebuah file kita bisa menggunakan class Scanner
+         try {
+            File myFile = new File("D:\\success\\java\\java-fundamental\\zzww_files\\two-file.txt");
+            Scanner myReader = new Scanner(myFile);
+            while(myReader.hasNextLine()) {
+               String data = myReader.nextLine();
+               System.out.println(data);
+            }
+            myReader.close();
+         } catch (FileNotFoundException e) {
+            System.out.println("An error occured.");
+            e.printStackTrace();
+         }
+
+         // mendapatkan informasi dari file
+         File getFile = new File("D:\\success\\java\\java-fundamental\\zzww_files\\two-file.txt");
+         if (getFile.exists()) {
+            System.out.println("File name: " + getFile.getName());
+            System.out.println("Absolute path: " + getFile.getAbsolutePath());
+            System.out.println("Writeable: " + getFile.canWrite());
+            System.out.println("Readable " + getFile.canRead());
+            System.out.println("File size in bytes " + getFile.length());
+         } else {
+            System.out.println("File does not exist.");
+         }
 
     }
 
