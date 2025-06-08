@@ -77,6 +77,29 @@ public class Main {
             System.out.println("File does not exist.");
          }
 
+         // delete file
+         // untuk menghapus file kita bisa menggunakan method delete
+         
+         try {
+            File file3 = new File("D:\\success\\java\\java-fundamental\\zzww_files\\thirdfile.txt");
+            if (file3.createNewFile()) {
+               System.out.println("File3 created");
+            }
+
+            if (file3.exists()) {
+               System.out.println("File exist, ready to delete");
+            }
+
+            if (file3.delete()) {
+               System.out.println("Delete file successfully");
+            } else {
+               System.out.println("Failed delete file");
+            }
+
+         } catch (IOException e) {
+            System.out.println("Error");
+         }
+
     }
 
 }
